@@ -44,3 +44,8 @@ const pay = database.collection("pay");
 app.get("/", (req, res) => {
   res.send("Welcome to home page!");
 });
+
+app.get("/user", verifyToken, async (req, res) => {
+  const result = await users.find().toArray();
+  res.send(result);
+});
