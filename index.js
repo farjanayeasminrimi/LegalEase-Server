@@ -32,3 +32,11 @@ const JWKS = createRemoteJWKSet(
 const verifyToken = async (req, res, next) => {
   ...
 };
+
+const database = client.db("LegalEase");
+
+const LaywerData = database.collection("laywerData");
+const comments = database.collection("comments");
+const users = database.collection("user");
+const hirelawyers = database.collection("hirelawyers");
+const pay = database.collection("pay");
