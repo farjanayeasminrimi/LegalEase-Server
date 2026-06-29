@@ -40,3 +40,7 @@ const comments = database.collection("comments");
 const users = database.collection("user");
 const hirelawyers = database.collection("hirelawyers");
 const pay = database.collection("pay");
+
+app.get("/", (req, res) => {
+  res.send("Welcome to home page!");
+});
