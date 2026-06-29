@@ -54,7 +54,7 @@ const verifyToken = async (req, res, next) => {
 
 async function run() {
   try {
-    const database = client.db("AS_10");
+    const database = client.db("LegalEase");
     const LaywerData = database.collection("laywerData");
     const comments = database.collection("comments");
     const users = database.collection("user");
