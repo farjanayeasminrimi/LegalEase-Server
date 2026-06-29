@@ -22,3 +22,13 @@ const client = new MongoClient(uri, {
     deprecationErrors: true,
   },
 });
+
+const { createRemoteJWKSet, jwtVerify } = require("jose-cjs");
+
+const JWKS = createRemoteJWKSet(
+  new URL(process.env.BASE_URL + "/api/auth/jwks")
+);
+
+const verifyToken = async (req, res, next) => {
+  ...
+};
