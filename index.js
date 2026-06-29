@@ -50,3 +50,4 @@ app.get("/user", verifyToken, async (req, res) => {
   res.send(result);
 });
 app.patch("/user/:id", ...)
+app.delete("/user/:id", ...)
