@@ -52,3 +52,4 @@ app.get("/user", verifyToken, async (req, res) => {
 app.patch("/user/:id", ...)
 app.delete("/user/:id", ...)
 app.post("/laywerdata", ...)
+app.get("/alllaywer", ...)
