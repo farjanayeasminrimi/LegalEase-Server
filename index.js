@@ -49,3 +49,4 @@ app.get("/user", verifyToken, async (req, res) => {
   const result = await users.find().toArray();
   res.send(result);
 });
+app.patch("/user/:id", ...)
